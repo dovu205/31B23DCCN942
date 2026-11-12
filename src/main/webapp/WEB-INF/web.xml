@@ -1,0 +1,11 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="4.0">
+  <display-name>GaraMan</display-name>
+  <welcome-file-list><welcome-file>index.jsp</welcome-file></welcome-file-list>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>JSP được phục vụ qua Servlet</web-resource-name>
+      <url-pattern>/view/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint/>
+  </security-constraint>
+</web-app>
